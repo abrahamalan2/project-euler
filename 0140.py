@@ -26,7 +26,7 @@ I.e. there exists integer k so that k^2=5n^2+14n+1
 Let u=5n+7
 u^2-5k^2=44
 Some exhaustive search shows that some primitive solutions is (u,k)=(7,1); (8,2); (13,5); (7,-1); (8,-2); (13,-5)
-For each (a,b), let the integer solutions to u be defined by the sequence u_n with u_0=a and u_1=b. From the theory of Pell's equations we know u_n is the coefficient of 1 in (a+bsqrt(5))(9+4sqrt(5))^n
+For each (a,b), let the integer solutions to u be defined by the sequence u_n with u_0=a and k_0=b. From the theory of Pell's equations we know u_n is the coefficient of 1 in (a+bsqrt(5))(9+4sqrt(5))^n
 So u_n=18u_{n-1}-u_{n-2}
 '''
 
