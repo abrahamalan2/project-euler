@@ -1,0 +1,2 @@
+This one I just did in desmos. We want to find all integer solutions to y^2-x^2 <= 10^6 where y,x have same parity and 0<x<y. If we let N=10^6 and case on the value of y-x as 2n then we see y+x <= N/2n or 2x+2n <= N/2n. So as long as 0 < x < -n + N/4n we have a solution.
+This gives us \sum_{n=1}^{\sqrt{N}/2} floor(\frac{N}{4n}-n) as our solution.
