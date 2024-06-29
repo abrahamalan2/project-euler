@@ -7,8 +7,6 @@ We can case on whether n is in [0,26666666666]; [30000000000,32666666666]; etc.
 
 def f(d):
     return (d+1)*(d+2)//2
-def g(d):
-    return (d+1)*(d+2)//2
 
 N = 10 ** 9 - 1
 L = []
