@@ -1,0 +1,24 @@
+L_n(x) : probability that S is <= x <= 1 after n numbers
+
+L_n(x) = x^n/n!
+
+M_n(x) : probability (PDF) that her last number is x <= 1 and it took her n+1 tries
+M_n(x) = L_n(1)-L_n(1-x)
+
+M(x) : probability (PDF) that her last number is x <= 1
+M(x) = e-e^{1-x}
+
+
+J_n(x) : probability that S is <= x <= 2 after n numbers
+
+J_n(x) = {x^n/n! : x <= 1; x^n/n! - n (x-1)^n/n! : x <= 2}
+
+K_n(x) : probability (PDF) that her last number is x <= 1 and it took her n+1 tries
+K_n(x) = J_n(2)-J_n(2-x)
+
+K(x) : probability (PDF) that her last number is x <= 1
+K(x) = e^2-e - e^{2-x} + e^{1-x}(1-x)
+
+
+Probability second player wins is
+\int_0^1\int_x^1 M(x)K(y) dy dx
